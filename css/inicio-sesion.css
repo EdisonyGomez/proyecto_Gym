@@ -1,0 +1,39 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.input{
+	color: white;
+	position: relative;
+	border: 0;
+	border-bottom: solid;
+	margin : 0 auto;
+	background: transparent;
+}
+
+.container{
+	padding: 50px;
+}
+
+.btn{
+	
+	border-radius: 5em;
+	color: black;
+	background: white;
+	opacity: 0.8;
+
+}
+
+.fa-dumbbell ,.fa-user, .fa-key{
+color: white;
+}
+
+.card{
+	border-radius: 1em; 
+	border: solid; 
+	padding: 10px; 
+	background-color:#777977;
+	opacity: 0.9;
+						
+}
