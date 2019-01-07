@@ -21,6 +21,7 @@ $(document).ready(function(){
             header.toggleClass('active');
       });
 
+<<<<<<< HEAD
       
 
 });
@@ -31,11 +32,26 @@ $(document).ready(function(){
 
  $('#edit').click(function(){
      $('#contenido').load('edicion_usuario.html');
+=======
+       
+
+});
+
+
+ $('#edit').click(function(){
+     $('#contenido').load('edicion_usuarios.html');
+>>>>>>> 6a1142bd8642db54323d31df585f283722c8b05e
    });
 
  $('.dashboard').click(function(){
      $('.reload').load('inicio.html');
    });
+<<<<<<< HEAD
+=======
+
+ 
+
+>>>>>>> 6a1142bd8642db54323d31df585f283722c8b05e
           
                  
 
