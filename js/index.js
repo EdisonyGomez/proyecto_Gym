@@ -21,37 +21,40 @@ $(document).ready(function(){
             header.toggleClass('active');
       });
 
-<<<<<<< HEAD
       
 
 });
 
- 
- 
-
-
- $('#edit').click(function(){
-     $('#contenido').load('edicion_usuario.html');
-=======
-       
-
-});
-
-
- $('#edit').click(function(){
-     $('#contenido').load('edicion_usuarios.html');
->>>>>>> 6a1142bd8642db54323d31df585f283722c8b05e
+$('.edit').click(function(){
+     $('#contenido').load('edicion_usuari.html');
    });
+
+ 
 
  $('.dashboard').click(function(){
      $('.reload').load('inicio.html');
    });
-<<<<<<< HEAD
-=======
+
+
+ $('.productos').click(function(){
+     $('#contenido').load('index_productos.html');
+   });
+
+
+ $('.servicios').click(function(){
+     $('#contenido').load('index_servicios.html');
+   });
+
+ 
+const menuTwo = document.querySelector('.menuTwo');
+function addClassFunTwo() {
+        this.classList.toggle("clickMenuTow");
+    }
+
+    menuTwo.addEventListener('click', addClassFunTwo);
 
  
 
->>>>>>> 6a1142bd8642db54323d31df585f283722c8b05e
           
                  
 
@@ -69,10 +72,10 @@ $('.menu-toggle').click(function() {
     } else {
     /* Reset for CSS changes – Still need a better way to do this! */
       if (!$('.contenedor').hasClass("ancho-min")) {
-        // $('.main').css('margin-left', '250px');
+         $('.main').css('margin-left', '250px');
       }  
       else {
-        // $('.main').css('margin-left', '70px');
+         $('.main').css('margin-left', '70px');
       }
     }
   
@@ -96,14 +99,14 @@ $('.menu-boton').click(function() {
     if (window.matchMedia('(min-width: 1017px)').matches) {
     /* Changes when we reach the min-width  */
       $('.contenedor').removeClass('ancho-min');
-      // $('.sidebar').css('position', 'static');
-      // $('.main').css('margin-left', '0');
+       $('.sidebar').css('position', 'static');
+       $('.main').css('margin-left', '0');
 
     } else {
     /* Reset for CSS changes – Still need a better way to do this! */
       $('.contenedor').addClass('ancho-min');
-      // $('.sidebar').css('position', 'absolute');
-      // $('.main').css('margin-left', '70px');
+       $('.sidebar').css('position', 'absolute');
+       $('.main').css('margin-left', '70px');
     }
   };
   
