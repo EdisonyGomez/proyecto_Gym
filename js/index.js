@@ -29,6 +29,12 @@ $('.edit').click(function(){
      $('#contenido').load('edicion_usuari.html');
    });
 
+$('.editProd').click(function(){
+     $('#contenido').load('edicion_productos.html');
+   });
+
+
+
  
 
  $('.dashboard').click(function(){
@@ -37,7 +43,7 @@ $('.edit').click(function(){
 
 
  $('.productos').click(function(){
-     $('#contenido').load('index_productos.html');
+     $('#contenido').load('edicion_productos.html');
    });
 
 
