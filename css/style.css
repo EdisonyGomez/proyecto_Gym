@@ -427,7 +427,7 @@ li.menu-items {
 }
 
 a:hover {
-font-size:15px;
+font-size:17px;
 
 }
 
@@ -460,6 +460,5 @@ ul.menu-nav-seg .menu-items-seg a {
 a.menu-toggle {
   cursor: pointer;
 }
-
 
 
