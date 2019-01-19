@@ -48,7 +48,7 @@ $('.editProd').click(function(){
 
 
  $('.servicios').click(function(){
-     $('#contenido').load('index_servicios.html');
+     $('#contenido').load('index_mensualidad.html');
    });
 
  
