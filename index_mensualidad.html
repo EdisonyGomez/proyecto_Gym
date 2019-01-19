@@ -1,3 +1,240 @@
-<body>
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	 
+</head>
+ <body>
+
+	<div class="container" 
+			style="width: 1000px; 
+				   height: 600px;">
+
+		<div class="row">
+			<div class="col-sm-4.2" >
+				<div class="card text-white bg-secondary" style="border-radius: 3em;">
+				  <div class="card-body">
+				    <h3 class="card-title">
+				   	 Registro de suscripcion
+					</h3>
+				       <hr>
+				    <form>
+					  <div class="form-group row row justify-content-center">
+				   
+						   <select placeholder="seleccione un tipo"
+						   				name="subject" 
+						   				id="subject_input" 
+						   				required 
+						   				style="width: 200px; 
+						   						height: 35px;
+						   						border-radius: 3em;">
+
+									        <option disabled hidden selected>seleccione un tipo</option>
+									        <option>Dia</option>
+									        <option>Semana</option>
+									        <option>Quincena</option>
+									        <option>Mes</option>
+
+									        
+							 </select>
+						</div>
+
+
+						<div class="form-group row row justify-content-center">  
+						<div >
+							
+							<i class="fas fa-dollar-sign fa-1x"></i>
+								<input class="input" 
+										type="text" 
+										name="" 
+										placeholder="Valor" 
+										size="25px" required 
+									style="border-left:0px;
+											border-top: 0px;
+											border-right: 0px; 
+											border-radius: 3em;">
+						</div>
+					</div>
+
+					
+					<center>
+				    			<button class="btn btn-success">	Guardar
+				    			</button>
+					</center>
+				    		</form>
+				  </div>
+				</div>
+			</div>
+
 	
+
+		
+		
+			<div class="col-md-7" >
+				<div class="card text-white bg-secondary" 
+					style="border-radius: 3em;">
+				  <div class="card-body">
+
+				    <h3 class="card-title row row justify-content-center">
+				   	 Suscribir cliente
+					</h3>
+				    <hr>
+				    <form>
+				    	<div class="row" > 
+				    		<div class="col-md-5" >
+				    			  <div class="form-group  row  		justify-content-center" >
+				   						
+						   				<input class="input" 
+										type="text" 
+										name="" 
+										placeholder="# cliente" 
+										required 
+										style="border-left:0px;
+											border-top: 0px;
+											border-right: 0px; 
+											border-radius: 3em;
+											width: 200px; 
+						   						height: 35px;">
+								  </div>
+
+				    		
+				    	
+					 
+
+						
+				    			  <div class="form-group row row  		justify-content-center" >
+				   						<select placeholder="seleccione un tipo"
+						   				name="subject" 
+						   				id="subject_input" 
+						   				required 
+						   				style="width: 200px; 
+						   						height: 35px;
+						   						border-radius: 3em;">
+
+									        <option disabled hidden selected>Tipo de suscripcion</option>
+									        <option>Dia</option>
+									        <option>Semana</option>
+									        <option>Quincena</option>
+									        <option>Mes</option>
+
+									        
+							 </select>
+					</div>
+				  </div><!-- fin col--->
+
+
+				  <div class="col-md-6">
+				    			  <div class="form-group  row  		justify-content-center" >
+				   						<label 
+				   						style="font-size: 20px;">Inicio:</label>
+				   						<input class="form-control" type="date" name="" step="1" min="1960-01-01" style="border-left:0px;
+											border-top: 0px;
+											border-right: 0px; 
+											border-radius: 3em;
+											width: 200px; 
+						   						height: 35px;">
+						   				
+								  </div>
+
+				    			<div class="form-group  row  		justify-content-center" >
+				   						<label 
+				   						style="font-size: 20px;">Fin:</label>
+				   						<input class="form-control" type="date" name="" step="1" min="1960-01-01" style="border-left:0px;
+											border-top: 0px;
+											border-right: 0px; 
+											border-radius: 3em;
+											width: 200px; 
+						   						height: 35px;">
+						   				
+								  </div>
+				    	
+					 
+
+						
+				    			  
+				  </div><!-- fin col--->
+
+
+
+				</div>	<!-- fin row--->
+					
+					<center>
+						<button class="btn btn-success">
+						    Guardar
+				    	</button>
+					</center>
+				  </form>
+				</div>
+			</div>
+		</div>  <!-- fin col-md-7--->
+
+ 	</div>
+
+
+ 	<section class="content" style="padding: 20px;">
+
+
+				 <table class="table table-bordered table-striped  table-hover" style="background-color: white;">
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Cliente</th>
+				      <th scope="col">Suscripcion</th>
+				      <th scope="col">Fecha inicio</th>
+				      <th scope="col">Fecha fin</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td> </td>
+				      <td> </td>
+				      <td>  </td>
+				      <td>  </td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td> </td>
+				      <td> </td>
+				      <td>  </td>
+				      <td>  </td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td> </td>
+				      <td>   </td>
+				      <td>  </td>
+				      <td>  </td>
+				    </tr>
+				    
+
+				  </tbody>
+				</table>
+
+	</section>
+
+
+	</div>
+
+
+
+
+
+	<script  src="js/edi_usuarios.js">
+    </script>
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+  	</script>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'>
+	</script>
+
+    
 </body>
+
+</html>
